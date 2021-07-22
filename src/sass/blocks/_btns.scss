@@ -1,0 +1,21 @@
+.btn {
+    &__main {
+        background-color: $g_color;
+        border-radius: 100px;
+        padding: 25px 60px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        transition: all 0.4s ease;
+        &:hover {
+            background-color: #269001;
+        }
+    }
+
+    &__promo {
+        margin-left: -15px;
+        margin-top: 10px;
+    }
+    
+}
