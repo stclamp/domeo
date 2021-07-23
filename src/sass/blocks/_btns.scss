@@ -8,6 +8,8 @@
         line-height: 25px;
         font-weight: 600;
         transition: all 0.4s ease;
+        border: none;
+        cursor: pointer;
         &:hover {
             background-color: #269001;
         }

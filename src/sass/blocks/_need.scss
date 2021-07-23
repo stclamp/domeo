@@ -1,0 +1,31 @@
+.need {
+    padding-top: 90px;
+    &__title {
+        text-align: left;
+        color: $b-color;
+    }
+    &__vacancies {
+        display: grid;
+        grid-template-columns: repeat(4, 283px);
+        grid-template-rows: auto;
+        margin-top: 53px;
+    }
+    &__vacancies-item {
+        padding-left: 43px;
+        padding-bottom: 32px;
+        font-size: 18px;
+        line-height: 31px;
+        font-weight: 600;
+        position: relative;
+        margin-right: 16px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url('../img/need-item.png');
+            left: 0;
+            right: 0;
+        }
+    }
+}
