@@ -1,0 +1,41 @@
+.footer {
+    padding: 54px 0;
+    background-color: #dedede;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+    }
+    &__logo-img {
+        width: 70px;
+        height: 42px;
+        margin-right: 29px;
+    }
+    &__logo-text {
+        width: 273px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    &__tel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end
+    }
+    &__tel-link{
+        font-size: 20px;
+        line-height: 27px;
+        color: $text_color;
+        font-weight: 600;
+    }
+    &__tel-recall{
+        font-size: 14px;
+        line-height: 19px;
+        color: $text_color;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}

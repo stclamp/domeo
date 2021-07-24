@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -169,7 +169,8 @@
     <section class="salary">
         <div class="container">
             <h2 class="title salary__title">Рассчитайте вашу будущую <span>зарплату в Domeo</span></h2>
-            <h5 class="salary__subtitle">ответьте на 3 ключевых вопроса, по которым мы определим вашу точную зарплату</h5>
+            <h5 class="salary__subtitle">ответьте на 3 ключевых вопроса, по которым мы определим вашу точную зарплату
+            </h5>
             <div class="salary__quiz salary__quiz-1">
                 <h3 class="salary__quiz-title">Какая у вас специализация?</h3>
                 <h5 class="salary__quiz-subtitle">можно выбрать несколько</h5>
@@ -190,37 +191,37 @@
                 <div class="salary__btn">
                     <button class="btn__main btn__quiz">Далее</button>
                 </div>
-                
+
             </div>
-            <div class="salary__quiz salary__quiz-2 hidden">
+            <div class="salary__quiz salary__quiz-2">
                 <h3 class="salary__quiz-title">Сколько лет опыта?</h3>
                 <h5 class="salary__quiz-subtitle">в выбранной ранее специализации</h5>
-                <ul class="salary__quiz-list">
+                <ul class="salary__quiz-list salary__quiz-list-2">
                     <li class="salary__quiz-item">До 1 года</li>
-                    <li class="salary__quiz-item">От 2 до 3 лет</li>
+                    <li class="salary__quiz-item salary__quiz-item--active">От 2 до 3 лет</li>
                     <li class="salary__quiz-item">От 3 лет и более</li>
                 </ul>
                 <div class="salary__btn">
                     <button class="btn__main btn__quiz-back">Назад</button>
                     <button class="btn__main btn__quiz">Далее</button>
                 </div>
-                
+
             </div>
-            <div class="salary__quiz salary__quiz-3 hidden">
+            <div class="salary__quiz salary__quiz-3">
                 <h3 class="salary__quiz-title">Есть ли у вас собственный инструмент?</h3>
                 <h5 class="salary__quiz-subtitle">которым вы сможете выполнять качественный ремонт</h5>
-                <ul class="salary__quiz-list">
-                    <li class="salary__quiz-item">Да</li>
-                    <li class="salary__quiz-item">Нет</li>
+                <ul class="salary__quiz-list salary__quiz-list-3">
+                    <li class="salary__quiz-item salary__quiz-item--active">Да</li>
+                    <li class="salary__quiz-item ">Нет</li>
                     <li class="salary__quiz-item">Нет, но скоро обзаведусь</li>
                 </ul>
                 <div class="salary__btn">
                     <button class="btn__main btn__quiz-back">Назад</button>
                     <button class="btn__main btn__quiz">Далее</button>
                 </div>
-                
+
             </div>
-            <div class="salary__quiz salary__quiz-4 hidden">
+            <div class="salary__quiz salary__quiz-4">
                 <h3 class="salary__quiz-title">Остался последний шаг</h3>
                 <h5 class="salary__quiz-subtitle">заполните форму для расчет вашей будущей зарплаты</h5>
                 <form class="form recall__form" action="#">
@@ -234,14 +235,15 @@
                     </div>
                     <div class="salary__send">
                         <button class="btn__main btn__salary">Рассчитать заработную плату</button>
-                        <p class="privacy salary__privacy">Нажимая на кнопку, вы даёте согласие на обработку персональных
+                        <p class="privacy salary__privacy">Нажимая на кнопку, вы даёте согласие на обработку
+                            персональных
                             данных и соглашаетесь
                             <br>c <a class="privacy-link salary__privacy-link" href="#">политикой конфиденциальности</a>
                         </p>
                     </div>
-    
+
                 </form>
-                
+
             </div>
             <div class="steps">
                 <div class="container">
@@ -266,7 +268,7 @@
                         </div>
                         <div class="steps__card">
                             <span class="steps__card-number">4</span>
-                            <p class="steps__card-text">Приступаете 
+                            <p class="steps__card-text">Приступаете
                                 к работе</p>
                             <img class="steps__card-img" src="img/steps-4.png" alt="Step 1">
                         </div>
@@ -280,17 +282,21 @@
                     <form class="form recall__form" action="#">
                         <div class="form__name">
                             <label class="form__label salary__label" for="name">Введите Ваше имя</label>
-                            <input class="form__input salary__input" type="text" id="name" placeholder="Например, Алексей">
+                            <input class="form__input salary__input" type="text" id="name"
+                                placeholder="Например, Алексей">
                         </div>
                         <div class="form__phone">
                             <label class="form__label salary__label" for="phone">Введите Ваш телефон</label>
-                            <input class="form__input salary__input" type="tel" id="phone" placeholder="+7 (___)___-__-__">
+                            <input class="form__input salary__input" type="tel" id="phone"
+                                placeholder="+7 (___)___-__-__">
                         </div>
                         <div class="salary__send">
                             <button class="btn__main btn__salary">Получить постоянную работу</button>
-                            <p class="privacy salary__privacy">Нажимая на кнопку, вы даёте согласие на обработку персональных
+                            <p class="privacy salary__privacy">Нажимая на кнопку, вы даёте согласие на обработку
+                                персональных
                                 данных и соглашаетесь
-                                <br>c <a class="privacy-link salary__privacy-link" href="#">политикой конфиденциальности</a>
+                                <br>c <a class="privacy-link salary__privacy-link" href="#">политикой
+                                    конфиденциальности</a>
                             </p>
                         </div>
                     </form>
@@ -314,19 +320,167 @@
                 <div class="job__skill">
                     <p class="job__skills-text">Малярные и плиточные работы</p>
                     <img class="job__skills-img" src="img/job-3.png" alt="Job">
-                    
+
                 </div>
                 <div class="job__skill">
                     <p class="job__skills-text">Электромонтажные и сантехнические работы</p>
                     <img class="job__skills-img" src="img/job-4.png" alt="Job">
-                    
+
                 </div>
             </div>
             <div class="warning job__warning">
-                <p class="warning__text">Чем больше работы вы делаете, тем больше мы платим вам, <span>без ограничений в зарплате</span></p>
+                <p class="warning__text">Чем больше работы вы делаете, тем больше мы платим вам, <span>без ограничений в
+                        зарплате</span></p>
             </div>
         </div>
     </section>
+    <section class="online">
+        <div class="container">
+            <h2 class="title online__title"><span>Запишитесь прямо сейчас</span> на онлайн собеседование</h2>
+            <h5 class="online__subtitle">мы перезвоним вам с уточняющими вопросами в течении 30 минут после заявки</h5>
+            <div class="online__wrapper">
+                <div class="online__questions">
+                    <h4 class="online__questions-title">Во время собеседования мы у вас спросим:</h4>
+                    <ul class="online__questions-list">
+                        <li class="online__questions-item">Где вы живете территориально, и как планируете работать в
+                            Москве?
+                        </li>
+                        <li class="online__questions-item">Какую работу в ремонте квартир вы можете выполнять
+                            качественно?
+                        </li>
+                        <li class="online__questions-item">Есть ли у вас инструмент и опыт работы в ремонтах квартир?
+                        </li>
+                        <li class="online__questions-item">Какую зарплату вы хотите получать?</li>
+                        <li class="online__questions-item">И еще пару вопросов</li>
+                    </ul>
+                    <div class="warning">
+                        <p class="warning__question-text">Если вас устроят все условия работы,<br>
+                            вы можете выйти на объект уже на следующий день</p>
+                    </div>
+                </div>
+                <div class="online__form-block">
+                    <h3 class="online__form-title">Заполните форму!</h3>
+                    <h5 class="online__form-subtitle">Запишитесь на онлайн собеседование!</h5>
+                    <form class="form online__form" action="#">
+                        <div class="form__name online__form-name">
+                            <label class="form__label online__label" for="name">Введите Ваше имя</label>
+                            <input class="form__input online__input" type="text" id="name"
+                                placeholder="Например, Алексей">
+                        </div>
+                        <div class="form__phone online__form-phone">
+                            <label class="form__label online__label" for="phone">Введите Ваш телефон</label>
+                            <input class="form__input online__input" type="tel" id="phone"
+                                placeholder="+7 (___)___-__-__">
+                        </div>
+                        <div class="salary__send">
+                            <button class="btn__main btn__online">Записаться на собеседование</button>
+                            <p class="privacy online__privacy">Нажимая на кнопку, вы даёте согласие на обработку
+                                персональных
+                                данных и соглашаетесь
+                                <br>c <a class="privacy-link salary__privacy-link" href="#">политикой
+                                    конфиденциальности</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="title about__title">Мы не обманем вас с зарплатой и другими договоренностями</h2>
+            <h5 class="about__subtitle">мы не хотим портить свою репутацию и "экологичность" компании</h5>
+            <div class="about__wrapper">
+                <div class="about__more">
+                    <h5 class="about__minititle">Узнайте больше о компании Domeo за 1 минуту</h5>
+                    <img class="about__video" src="img/about_video.png" alt="youtube video">
+                </div>
+                <div class="about__text">
+                    <p class="about__text-block">Domeo работает с 2010 года. </p>
+                    <p class="about__text-block">За это время мы создали бизнес-структуру, которая работает как дорогие
+                        швейцарские часы.</p>
+                    <p class="about__text-block">Секрет нашего успеха в самых лучших условиях и высокой зарплате для
+                        мастеров, в честности и прозрачности с людьми.</p>
+                    <p class="about__text-block">Мы ценим мастеров с большим опытом, а также создаём все условия для
+                        качественной работы.</p>
+                </div>
+            </div>
+            <div class="about__inner">
+                <p class="about__text-bold">Присоединяйтесь к нам прямо сейчас!</p>
+                <p class="about__text-find">Мы ищем людей на постоянную работу. Нам нужны мастера для сотрудничества на
+                    долгие годы.</p>
+                <a href="#" class="btn__main btn__about">Присоединиться к Domeo</a>
+            </div>
+            <div class="about__certificates">
+                <img class="about__certificate" src="img/certificate-1.png" alt="">
+                <img class="about__certificate" src="img/certificate-2.png" alt="">
+                <img class="about__certificate" src="img/certificate-3.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2 class="title contacts__title">Вы всегда можете прийти к нам <span>в офис для личного знакомства</span>
+            </h2>
+            <h5 class="contacts__subtitle">мы с радостью вас встретим и обсудим условия работы</h5>
+            <div class="contacts__form-block">
+                <h3 class="contacts__form-title">Заполните форму!</h3>
+                <h4 class="contacts__form-subtitle">Запишитесь на прием в офисе!</h4>
+                <form class="form contacts__form" action="#">
+                    <div class="form__name contacts__form-name">
+                        <label class="form__label contacts__label" for="name">Введите Ваше имя</label>
+                        <input class="form__input contacts__input" type="text" id="name"
+                            placeholder="Например, Алексей">
+                    </div>
+                    <div class="form__phone contacts__form-phone">
+                        <label class="form__label contacts__label" for="phone">Введите Ваш телефон</label>
+                        <input class="form__input contacts__input" type="tel" id="phone"
+                            placeholder="+7 (___)___-__-__">
+                    </div>
+                    <div class="salary__send">
+                        <button class="btn__main btn__contacts">Посетить офис</button>
+                        <p class="privacy contacts__privacy">Нажимая на кнопку, вы даёте согласие на обработку
+                            персональных
+                            данных и соглашаетесь
+                            <br>c <a class="privacy-link salary__privacy-link" href="#">политикой
+                                конфиденциальности</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="contacts__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.5785608637284!2d37.570833416218555!3d55.71369698054294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b78deae21f5%3A0x3b7d83f4488d8087!2z0JvRg9C20L3QtdGG0LrQsNGPINC90LDQsS4sIDIvNCDRgdGC0YDQvtC10L3QuNC1IDE3LCAzMDgsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTkyNzA!5e0!3m2!1sru!2sua!4v1627143216067!5m2!1sru!2sua"
+                    width="760" height="800" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="contacts__block">
+                <h5 class="contacts__block-minititle">Адрес офиса:</h5>
+                <h6 class="contacts__block-adress">г. Москва, ул. Лужнецкая наб. 2/4 стр. 17, офис 308</h6>
+                <h5 class="contacts__block-minititle">Контактный телефон:</h5>
+                <h6 class="contacts__block-adress">8 (495) 126-24-89</h6>
+                <h5 class="contacts__block-minititle">Электронная почта:</h5>
+                <h6 class="contacts__block-adress">info@domeo.ru</h6>
+                <h5 class="contacts__block-minititle">График работы:</h5>
+                <h6 class="contacts__block-adress">С 9.00 до 22.00 без выходных</h6>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img class="footer__logo-img" src="img/logo.png" alt="">
+                    <p class="footer__logo-text">Прямые работодатели по ремонту
+                        квартир в Москве</p>
+                </div>
+                <div class="footer__tel">
+                    <a class="footer__tel-link" href="tel:+74956629523">+7 (495) 662-95-23 </a>
+                    <a class="footer__tel-recall" href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
