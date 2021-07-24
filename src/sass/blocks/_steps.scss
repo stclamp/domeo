@@ -1,0 +1,77 @@
+.steps {
+  padding-top: 90px;
+  &__subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 260px;
+    position: relative;
+    transition: all 0.4s ease;
+    padding-bottom: 36px;
+    &:hover {
+      border: 1px solid $y-color;
+      box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07),
+        0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198),
+        0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275),
+        0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035),
+        0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725),
+        0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
+    }
+  }
+  &__card-text {
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 600;
+    text-align: center;
+    width: 191px;
+    margin-bottom: 30px;
+  }
+  &__card-number {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    color: #fff;
+    background-color: $y-color;
+    z-index: 99;
+    font-size: 102px;
+    line-height: 139px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+  &__card-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.first__step {
+  padding-top: 90px;
+  &-subtitle {
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

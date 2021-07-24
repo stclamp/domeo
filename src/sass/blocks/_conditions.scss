@@ -1,91 +1,94 @@
 .conditions {
-    padding-top: 90px;
-    background-image: url('../img/conditions_bg.png');
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: 200px;
+  padding-top: 90px;
+  background-image: url("../img/conditions_bg.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: 200px;
+  position: relative;
+  z-index: 100;
+  &__title {
+    width: 573px;
+    margin: 0 auto;
     position: relative;
-    z-index: 100;
-    &__title {
-        width: 573px;
-        margin: 0 auto;
-        position: relative;
+  }
+  &__subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    margin-top: 20px;
+    position: relative;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    margin-top: 60px;
+    position: relative;
+  }
+  &__card {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07),
+      0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198),
+      0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275),
+      0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035),
+      0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725),
+      0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 10px;
+    padding-left: 80px;
+    position: relative;
+    background-color: #fff;
+    z-index: 999;
+  }
+  &__card-text {
+    font-size: 20px;
+    line-height: 31px;
+    position: relative;
+  }
+  &__card-number {
+    position: absolute;
+    font-size: 102px;
+    line-height: 139px;
+    font-weight: 600;
+    color: rgba(255, 219, 72, 0.25);
+    z-index: -1;
+    left: 20px;
+    top: 8px;
+  }
+  &__warning {
+    position: relative;
+    background-color: $y-color;
+    width: 1040px;
+    padding: 69px 0;
+    padding-bottom: 50px;
+    min-height: 140px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -40px;
+    z-index: -100;
+  }
+  &__warning-text {
+    position: relative;
+    width: 689px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: -100;
+    padding-left: 66px;
+    span {
+      font-weight: 600;
     }
-    &__subtitle {
-        text-align: center;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 31px;
-        margin-top: 20px;
-        position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      background-image: url("../img/warning.png");
+      left: 0;
+      right: 0;
     }
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px 40px;
-        margin-top: 60px;
-        position: relative;
-    }
-    &__card {
-        padding: 70px 0;
-        display: flex;
-        align-items: center;
-        box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07), 0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275), 0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035), 0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
-        border-radius: 10px;
-        padding-left: 80px;
-        position: relative;
-        background-color: #fff;
-        z-index: 999;
-    }
-    &__card-text {
-        font-size: 20px;
-        line-height: 31px;
-        position: relative;
-    }
-    &__card-number {
-        position: absolute;
-        font-size: 102px;
-        line-height: 139px;
-        font-weight: 600;
-        color: rgba(255, 219, 72, 0.25);
-        z-index: -1;
-        left: 20px;
-        top: 8px;
-    }
-    &__warning {
-        position: relative;
-        background-color: $y-color;
-        width: 1040px;
-        padding: 69px 0;
-        padding-bottom: 50px;
-        min-height: 140px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: -40px;
-        z-index: -100;
-
-        
-    }
-    &__warning-text{
-        position: relative;
-        width: 689px;
-        text-align: center;
-        margin: 0 auto;
-        z-index: -100;
-        padding-left: 66px;
-        span {
-            font-weight: 600;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            width: 62px;
-            height: 62px;
-            background-image: url('../img/warning.png');
-            left: 0;
-            right: 0;
-        }
-    }
+  }
 }

@@ -1,23 +1,33 @@
 .btn {
-    &__main {
-        background-color: $g_color;
-        border-radius: 100px;
-        padding: 25px 60px;
-        color: #fff;
-        font-size: 18px;
-        line-height: 25px;
-        font-weight: 600;
-        transition: all 0.4s ease;
-        border: none;
-        cursor: pointer;
-        &:hover {
-            background-color: #269001;
-        }
+  &__main {
+    background-color: $g_color;
+    border-radius: 100px;
+    padding: 25px 60px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #269001;
+      color: #fff;
     }
+  }
 
-    &__promo {
-        margin-left: -15px;
-        margin-top: 10px;
-    }
-    
+  &__promo {
+    margin-left: -15px;
+    margin-top: 10px;
+  }
+  &__quiz-back {
+    background-color: #fff;
+    color: $text_color;
+    border: 2px solid $g-color;
+    width: 240px;
+    margin-right: 30px;
+  }
+  &__salary {
+    font-size: 15px;
+  }
 }

@@ -1,112 +1,127 @@
-@import 'base/mixins';
-@import 'base/variables';
-@import 'libs/reset';
-@import 'blocks/btns';
-@import 'blocks/titles';
+@import "base/mixins";
+@import "base/variables";
+@import "libs/reset";
+@import "blocks/btns";
+@import "blocks/titles";
 
 * {
+  box-sizing: border-box;
+  &::after,
+  &::before {
     box-sizing: border-box;
-    &::after, &::before {
-        box-sizing: border-box;
-    }
+  }
 }
 body {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
-    color: $text_color;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: $text_color;
 }
 
-
 .container {
-    width: 1140px;
-    padding: 0 10px;
-    margin: 0 auto;
-    position: relative;
-    // z-index: 10;
+  width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+  // z-index: 10;
+}
+
+.hidden {
+  display: none;
 }
 
 .titles__block {
-    margin-top: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07), 0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275), 0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035), 0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.07),
+    0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198),
+    0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275),
+    0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035),
+    0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725),
+    0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 
 .not__find {
+  text-align: center;
+  font-size: 36px;
+  line-height: 43px;
+  width: 761px;
+  font-weight: 700;
+  margin: 0 auto;
+  span {
+    color: $b-color;
+  }
+  &-sub {
     text-align: center;
-    font-size: 36px;
-    line-height: 43px;
-    width: 761px;
-    font-weight: 700;
-    margin: 0 auto;
-    span {
-        color: $b-color
-    }
-    &-sub {
-        text-align: center;
-        font-size: 20px;
-        line-height: 31px;
-        font-weight: 400;
-        margin-top: 20px;
-    }
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
 }
 
 .warning {
-    padding: 39px 0;
-    background-color: $y-color;
-    border-radius: 10px;
-    min-height: 140px;
-    display: flex;
-    align-items: center;
-    margin-top: 88px; 
-    z-index: -20;
-    &__text {
-        padding-left: 62px;
-        font-size: 19px;
-        line-height: 31px;
-        position: relative;
-        vertical-align: middle;
-        span {
-            font-weight: 600;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            width: 62px;
-            height: 62px;
-            background-image: url('../img/warning.png');
-            top: -50%;
-            left: 0;
-        }
+  padding: 39px 0;
+  background-color: $y-color;
+  border-radius: 10px;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  margin-top: 88px;
+  z-index: -20;
+  &__text {
+    padding-left: 62px;
+    font-size: 19px;
+    line-height: 31px;
+    position: relative;
+    vertical-align: middle;
+    span {
+      font-weight: 600;
     }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      background-image: url("../img/warning.png");
+      top: -50%;
+      left: 0;
+    }
+  }
 }
 
 .form {
-    &__label {
-        font-size: 18px;
-        line-height: 28px;
+  &__label {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__input {
+    width: 300px;
+    padding: 29px 20px;
+    border: 1px solid $g-color;
+    border-radius: 10px;
+    &::placeholder {
+      font-size: 18px;
+      line-height: 18px;
+      color: #dedede;
     }
-    &__input {
-        width: 300px;
-        padding: 29px 20px;
-        border: 1px solid $g-color;
-
-        border-radius: 10px;
+  }
+  .privacy {
+    width: 403px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    &-link {
+      color: $b-color;
     }
-    .privacy {
-        width: 403px;
-        text-align: center;
-        margin: 10px auto 0 auto;
-        font-size: 14px;
-        line-height: 21px;
-        &-link {
-            color: $b-color;
-        }
-    }
+  }
 }
 
-@import 'blocks/promo';
-@import 'blocks/need';
-@import 'blocks/recall';
-@import 'blocks/conditions';
-
+@import "blocks/promo";
+@import "blocks/need";
+@import "blocks/recall";
+@import "blocks/conditions";
+@import "blocks/salary";
+@import "blocks/steps";
+@import "blocks/job";

@@ -1,0 +1,60 @@
+.job {
+  padding-top: 90px;
+  &__subtitle {
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 400px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__skills {
+    margin-top: 41px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  &__skill {
+    display: flex;
+    align-items: center;
+    width: 580px;
+    background-image: url("../img/job-border-l.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: contain;
+    &:nth-child(n + 3) {
+      background-image: url("../img/job-border-r.png");
+      background-position-x: left;
+      .job__skills-img {
+        // margin-left: 50px;
+      }
+      .job__skills-text {
+        width: 290px;
+        padding-left: 50px;
+      }
+    }
+  }
+  &__skills-img {
+    width: 290px;
+    height: 290px;
+    z-index: -1;
+  }
+  &__skills-text {
+    text-align: center;
+    justify-content: center;
+    width: 221px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 600;
+  }
+  &__warning {
+    z-index: -999;
+    position: relative;
+    width: 1040px;
+    text-align: center;
+    margin: -5px auto 0 auto;
+    padding-left: 10px;
+    margin-left: 50px;
+  }
+}

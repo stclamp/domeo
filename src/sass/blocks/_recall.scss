@@ -1,31 +1,32 @@
 .recall {
-    padding-top: 60px;
-    padding-bottom: 90px;
-    &__subtitle {
-        font-size: 20px;
-        line-height: 31px;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 10px;
-    }
-    &__form {
-        display: flex;
-        margin-top: 60px;
-    }
-    &__input {
-        margin-top: 15px;
-        margin-right: 45px;
-        &::placeholder {
-            font-size: 18px;
-            line-height: 18px;
-            color: #dedede
-        }
-    }
-    &__send {
-        margin-top: 45px;
-    }
-    .btn__recall {
-        width: 394px;
-        font-size: 17px;
-    }
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background: radial-gradient(
+      50% 50% at 50% 100%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #fafafa;
+  &__subtitle {
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+  }
+  &__form {
+    display: flex;
+    margin-top: 60px;
+  }
+  &__input {
+    margin-top: 15px;
+    margin-right: 45px;
+  }
+  &__send {
+    margin-top: 45px;
+  }
+  .btn__recall {
+    width: 394px;
+    font-size: 17px;
+  }
 }
