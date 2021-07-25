@@ -1,0 +1,763 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .promo {
+    background-position-x: 342px;
+  }
+  .need {
+    &__vacancies {
+      grid-template-columns: repeat(3, 283px);
+    }
+  }
+  .recall {
+    &__form {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form__name,
+    .form__phone {
+      display: flex;
+      flex-direction: column;
+    }
+    .form__phone .recall__input {
+      margin-right: 0;
+    }
+  }
+  .conditions {
+    background: #fff;
+    &__warning {
+      width: auto;
+    }
+  }
+  .salary {
+    .form__name,
+    .form__label {
+      display: flex;
+      flex-direction: column;
+    }
+    .form__name .form__input {
+      margin-right: 45px;
+    }
+  }
+  .job {
+    &__skills {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &__skill {
+      background-image: none;
+    }
+    &__skill:nth-child(n + 3) {
+      background-image: none;
+    }
+    &__skill:nth-child(n + 3) .job__skills-text {
+      width: auto;
+      padding-left: 0;
+    }
+    &__warning {
+      width: auto;
+    }
+    .warning__text {
+      &::before {
+        top: -15%;
+      }
+    }
+  }
+  .online {
+    padding-bottom: 246px;
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__form-block {
+      margin-left: 0;
+    }
+    .warning {
+      width: auto;
+      bottom: -920px;
+    }
+  }
+  .about {
+    &__certificates {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .contacts {
+    &__block {
+      width: 358px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .promo {
+    &__title {
+      width: auto;
+    }
+  }
+  .not__find {
+    width: auto;
+    font-size: 33px;
+  }
+  .need {
+    &__title {
+      text-align: center;
+    }
+    &__vacancies {
+      grid-template-columns: repeat(2, 283px);
+      justify-content: center;
+    }
+    .warning {
+      &__text {
+        &::before {
+          top: 0;
+        }
+      }
+    }
+  }
+  .salary {
+    &__quiz-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .salary__quiz-2 .salary__quiz-list,
+    .salary__quiz-3 .salary__quiz-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .steps {
+    &__cards {
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    &__card {
+      margin-top: 100px;
+    }
+  }
+  .online .warning {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn__about {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  .contacts {
+    &__map {
+      margin-top: 851px;
+      justify-content: center;
+    }
+    &__form-block {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .promo {
+    background-image: url("../img/promo_snall_bg.png");
+    background-position: bottom right;
+    &__header {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header__phone {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .header__sublogo {
+      text-align: center;
+      margin-top: 13px;
+      margin-left: 0;
+    }
+    .header__phone-call {
+      display: none;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      margin-right: 0;
+      text-align: center;
+    }
+    &__advantages-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__advantages-item {
+      margin-right: 0;
+    }
+  }
+  .recall {
+    &__input {
+      margin-right: 0;
+    }
+    &__label {
+      margin-top: 20px;
+    }
+  }
+  .conditions {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  .salary {
+    &__quiz-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__btn {
+      justify-content: center;
+    }
+    .form__name .form__input {
+      margin-right: 0;
+    }
+    .form__label,
+    .salary .form__name {
+      margin-top: 20px;
+    }
+  }
+  .steps {
+    &__cards {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__card {
+      width: 100%;
+    }
+  }
+  .conditions {
+    &__title {
+      width: auto;
+    }
+  }
+  .job {
+    &__skills:nth-child(n + 3) {
+      .job__skills-text {
+        order: 2;
+      }
+    }
+    &__skill {
+      width: auto;
+    }
+  }
+  .about {
+    &__title {
+      width: auto;
+    }
+    &__text-bold {
+      font-size: 17px;
+    }
+  }
+  .contacts {
+    &__title {
+      width: auto;
+    }
+    &__form-block {
+      padding: 60px;
+    }
+  }
+  .online .warning__question-text {
+    width: 542px;
+  }
+  .online__form-block {
+    padding: 60px 70px 20px;
+  }
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__logo {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-img {
+        margin-right: 0;
+      }
+      &-text {
+        margin-top: 13px;
+      }
+    }
+    &__tel {
+      margin-top: 30px;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+  .promo {
+    padding-top: 20px;
+    background-position-y: 500px;
+    padding-bottom: 86px;
+    &__title {
+      font-size: 26px;
+      line-height: 31px;
+    }
+    &__text {
+      width: auto;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__advantages {
+      width: auto;
+    }
+    &__advantages-list {
+      align-items: flex-start;
+    }
+    &__more-text {
+      width: auto;
+    }
+    &__more {
+      width: auto;
+      margin: 85px 0 44px 0;
+    }
+    &__arrow-down {
+      display: none;
+    }
+  }
+  .btn__main {
+    font-size: 14px;
+    line-height: 19px;
+    width: 300px;
+    padding: 25px 30px;
+  }
+  .btn__promo {
+    margin-left: -6px;
+  }
+  .header {
+    &__sublogo {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__phone-number {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .not__find {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .not__find-sub {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .need {
+    &__title {
+      font-size: 23px;
+      line-height: 28px;
+    }
+    &__vacancies {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__vacancies-item {
+      font-size: 16px;
+      line-height: 25px;
+      width: 143px;
+    }
+    .warning__text {
+      margin-top: 50px;
+      font-size: 15px;
+      line-height: 25px;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+    }
+    .warning__text::before {
+      top: -31%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+  }
+  .recall {
+    &__title {
+      font-size: 24px;
+      line-height: 37px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 600;
+    }
+    &__form {
+      margin-top: 30px;
+    }
+    .btn__recall {
+      width: 300px;
+      font-size: 14px;
+      line-height: 19px;
+      display: block;
+      margin: 0 auto;
+    }
+    .form .privacy {
+      width: 300px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .conditions {
+    padding-top: 85px;
+    background-image: url("../img/conditions_bg.png");
+    background-repeat: no-repeat;
+    background-size: 170px 76px;
+    &__title {
+      font-size: 26px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      width: 250px;
+      margin: 15px auto 0 auto;
+    }
+    &__card-text {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__warning {
+      z-index: 999;
+    }
+    &__warning-text {
+      font-size: 16px;
+      line-height: 25px;
+      padding-left: 11px;
+      padding-right: 11px;
+      margin-top: 62px;
+      &::before {
+        top: -74px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .salary {
+    padding-bottom: 40px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__quiz {
+      padding-left: 4px;
+    }
+    &__quiz-list {
+      gap: 10px 2px;
+    }
+    &__quiz-title {
+      width: auto;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__quiz-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__quiz-item {
+      font-size: 16px;
+      line-height: 25px;
+      width: 141px;
+      padding-left: 30px;
+      &::before {
+        top: 2px;
+      }
+    }
+    &__btn {
+      padding-right: 0;
+    }
+  }
+  .steps {
+    &__title {
+      font-size: 22px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  .first__step {
+    &-title {
+      font-size: 23px;
+      line-height: 38px;
+    }
+    &-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .form__label {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+    .btn__main {
+      display: block;
+      margin: auto;
+    }
+    .form .privacy {
+      width: 300px !important;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .job {
+    padding-top: 40px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+    }
+    &__skill {
+      flex-direction: column;
+      width: 300px;
+    }
+    &__skills-img {
+      width: 300px;
+    }
+    &__skills-text {
+      padding: 80px 50px;
+      background-color: #fafafa;
+      min-width: 300px;
+    }
+    &__skill:nth-child(n + 3) .job__skills-text {
+      padding: 80px 50px;
+      width: 300px;
+    }
+    &__warning {
+      padding: 49px 11px 30px 11px;
+      width: 100%;
+      margin-left: 0;
+    }
+    .warning__text {
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 62px;
+      padding-left: 0;
+      &::before {
+        top: -107%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .online {
+    padding-top: 40px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 17px;
+      line-height: 25px;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__questions {
+      width: 300px;
+    }
+    &__qustions-list {
+      width: 299px;
+    }
+    &__questions-title {
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+    }
+    &__questions-item {
+      font-size: 16px;
+      line-height: 25px;
+      width: 299px;
+    }
+    &__form-block {
+      width: 300px;
+      padding: 30px 10px;
+      z-index: 50;
+    }
+    &__form-title {
+      font-size: 24px;
+      line-height: 37px;
+    }
+    &__form-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__form-name,
+    &__form-phone {
+      width: 280px;
+    }
+    &__label {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__input {
+      width: 280px;
+    }
+    .btn__online {
+      width: 280px;
+      display: block;
+      margin: auto;
+      font-size: 13px;
+      line-height: 19px;
+    }
+    .form .privacy {
+      width: 290px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+    .warning {
+      width: 290px;
+      bottom: -779px;
+      padding: 30px 18px;
+      z-index: 20;
+    }
+    .warning__question-text {
+      margin-left: 0;
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+  .about {
+    margin-top: -358px;
+    padding-top: 303px;
+    padding-bottom: 20px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__minititle {
+      width: auto;
+      font-size: 16px;
+      line-height: 25px;
+      padding-left: 32px;
+      &::before {
+        background-image: url("../img/about-timer-small.png");
+        width: 22px;
+        height: 22px;
+        top: 1px;
+      }
+    }
+    &__text {
+      margin-left: 0;
+    }
+    &__text-block {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__text-bold {
+      font-size: 16px;
+      line-height: 25px;
+      width: 230px;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -22px;
+    }
+    &__inner {
+      padding: 30px 10px;
+    }
+    &__text-find {
+      order: 2;
+      font-size: 16px;
+      line-height: 25px;
+      width: 300px;
+      margin-right: 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+    &__certificate {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 316px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+    &__form-block {
+      width: 300px;
+      top: 235px;
+      padding: 30px 10px;
+    }
+    &__form-title {
+      font-size: 24px;
+      line-height: 37px;
+    }
+    &__form-subtitle {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__label {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    &__input {
+      width: 280px;
+    }
+    .btn__contacts {
+      width: 280px;
+    }
+    .form .privacy {
+      width: 290px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+    &__map {
+      margin-top: 700px;
+    }
+    &__block {
+      border-radius: 0px;
+      width: 100%;
+      padding: 30px;
+      bottom: -316px;
+    }
+    &__block-minititle {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+    &__block-adress {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+  }
+}
