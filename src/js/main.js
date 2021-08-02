@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const quizBtn = document.querySelectorAll('.btn__quiz');
     const quizBtnBack = document.querySelectorAll('.btn__quiz-back');
 
-    quizItems.forEach(item => {
+    quizItems.forEach((item, i) => {
         if (item.closest('.salary__quiz-list-2') || item.closest('.salary__quiz-list-3')) {
             item.addEventListener('click', () => {
                 quizItems.forEach(item => {
@@ -19,8 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.classList.toggle('salary__quiz-item--active');
             })
         }
-
     });
+
+
+
 
     function hideQuiz() {
         quizBlock.forEach(item => {

@@ -524,6 +524,9 @@
     }
   }
   .job {
+    .container {
+      padding: 0;
+    }
     padding-top: 40px;
     &__title {
       font-size: 24px;
@@ -536,15 +539,18 @@
     }
     &__skill {
       flex-direction: column;
-      width: 300px;
+      width: 100%;
+
+      
     }
     &__skills-img {
-      width: 300px;
+      width: 100%;
     }
     &__skills-text {
       padding: 80px 50px;
       background-color: #fafafa;
       min-width: 300px;
+      width: 100%;
     }
     &__skill:nth-child(n + 3) .job__skills-text {
       padding: 80px 50px;
@@ -583,8 +589,8 @@
     &__questions {
       width: 300px;
     }
-    &__qustions-list {
-      width: 299px;
+    &__questions-list {
+      width: auto
     }
     &__questions-title {
       font-size: 16px;
@@ -701,6 +707,9 @@
     }
   }
   .contacts {
+    .container {
+      padding: 0;
+    }
     padding-top: 40px;
     padding-bottom: 316px;
     &__title {
@@ -748,6 +757,8 @@
       width: 100%;
       padding: 30px;
       bottom: -316px;
+      left: 0;
+      right: 0;
     }
     &__block-minititle {
       font-size: 18px;
